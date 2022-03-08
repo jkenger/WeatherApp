@@ -72,6 +72,75 @@ hr{
     width: 30px;
 }
 
+
+
+/* weather main */
+.weather{
+    padding:0;
+}
+
+.weather img, .weather span{
+    padding:0;
+}
+
+.weather p{
+    margin-bottom: 1em;
+}
+
+.weather .temp{
+    padding: .25em;
+    font-size: 3rem;
+}
+
+.weather-footer{
+    padding: 0;
+    margin-top:1em;
+    width: 100%;
+}
+
+.weather-footer i {
+    color: #c7ecee;
+}
+
+.weather-footer span{
+    font-weight: 600;
+}
+
+.footer-main{
+    display: flex;
+    text-align: center;
+    justify-content:space-between;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-radius: 0;
+}
+
+.footer-main .feels-like{
+    width: 50%;
+    border-right: 1px solid #ccc;
+    border-radius: 0;
+}
+.footer-main .humid{
+    width: 50%;
+}
+
+.footer-main i{
+    padding: .25em;
+}
+
+.feels-like, .humid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .75em 0 .75em 0;
+}
+
+.feels-like-details, .humid-details{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
 /* UIs */
 input, button{
     text-align: center;
@@ -82,4 +151,30 @@ input[type="text"]{
     width: 100%;
     height: 50px;
     padding: 0;
+}
+
+input[type="text"]:hover{
+    border: 1px solid #95afc0;
+}
+input[type="text"]:focus{
+    border: 1px solid #95afc0;
+    outline: none;
+}
+
+button{
+    background-color: #c7ecee;
+    color: #ffffff;
+    border: none;
+    padding: 1em;
+    width: 100%;
+    font-size: 1em;
+    transition: .5s;
+}
+button:hover{
+    background-color: #95afc0;
+    color: #ffffff;
+}
+
+.hide{
+    display:none;
 }
