@@ -10,39 +10,40 @@
     <body>
         <div class="container">
                 <header>
-                    <a href="#"><i class="fa-solid fa-angle-left"></i></a>
+                    <a href="#" class="back hide" ><i class="fa-solid fa-angle-left"></i></a>
                     <h1>Weather App</h1>
                 </header>
             <div class="wrapper">
                 <main>
-                    <input type="Text" placeholder="Enter City Name">
+                    <div class="status-el hide">ERROR</div>
+                    <input type="Text" placeholder="Enter City Name" id="input-el">
                 </main>
                 <div class="separator">
                 </div>
                 <footer>
-                    <button>Get Device Location</button>
+                    <button id="location-btn">Get Device Location</button>
                 </footer>
             </div>
 
             <div class="wrapper-2 hide">
                 <main class="weather">
-                    <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="asdsd"></img>
-                    <span class="temp">21 C</span>
-                    <p class="desc">Moderate Rain</p>
-                    <p class-="location"><i class="fa-solid fa-location-dot"></i>Manila, PH</p>
+                    <img class ="weather-ico" alt="asdsd"></img>
+                    <span class="weather-temp">21 C</span>
+                    <p class="weather-desc">Moderate Rain</p>
+                    <p class="weather-location"><i class="fa-regular fa-compass fa-xl"></i></p>
                 <footer class="weather-footer">
                     <div class="footer-main">
                         <div class="feels-like">
                             <i class="fa-solid fa-temperature-full fa-2xl"></i>
                             <div class="feels-like-details">
-                                <span class="feels-like-temp">23 C</span>
+                                <p class="feels-like-temp">23 C</span>
                                 <p class="feels-like-blabel">Feels like</p>
                             </div>
                         </div>
                         <div class="humid">
                             <i class="fa-solid fa-droplet fa-2xl"></i>
                             <div class="humid-details">
-                                <span class="humid-temp">23 C</span>
+                                <p class="humid-temp"></span>
                                 <p class="humid-label">Humid</p>
                             </div>
                         </div>
@@ -51,6 +52,6 @@
                 </main>
             </div>
             </div>
-        <script src=""></script>
+        <script src="app.js"></script>
     </body>
 </html>
