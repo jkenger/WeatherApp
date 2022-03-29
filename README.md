@@ -1,6 +1,6 @@
 # WeatherApp
 
-A weather tracker for any location with JS geolocation integrated.
+A weather tracker for any location integrated with JS geolocation that track your current location.
 
 ![image](https://user-images.githubusercontent.com/73566770/160531248-d3e1a2a8-d45c-4b53-8cce-c950c398e1ae.png)
 
